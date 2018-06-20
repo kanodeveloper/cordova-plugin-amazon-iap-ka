@@ -1,0 +1,23 @@
+{
+    "name": "cordova-plugin-amazon-iap-ka",
+    "version": "1.0.0",
+    "description": "Amazon iap",
+    "cordova": {
+      "id": "cordova-plugin-amazon-iap-ka",
+      "platforms": [
+        "android"
+      ]
+    },
+    "repository": {
+      "type": "git",
+      "url": ""
+    },
+    "keywords": [
+    ],
+    "author": "",
+    "license": "",
+    "bugs": {
+      "url": ""
+    },
+    "homepage": ""
+  }
