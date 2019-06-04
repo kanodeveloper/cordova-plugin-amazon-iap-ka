@@ -1,6 +1,6 @@
 {
     "name": "cordova-plugin-amazon-iap-ka",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Amazon iap",
     "cordova": {
       "id": "cordova-plugin-amazon-iap-ka",
