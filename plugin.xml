@@ -21,7 +21,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="cordova-plugin-amazon-iap-ka"
-    version="1.0.1">
+    version="1.0.2">
     <name>AmazonIapV2</name>
 
     <js-module src="www/AmazonIapV2.js" name="AmazonIapV2">
@@ -32,15 +32,16 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="AmazonIapV2Plugin" >
-                <param name="android-package" value="cordova-plugin-amazon-iap-ka"/>
+                <param name="android-package" value="com.amazon.device.iap.cpt.AmazonIapV2Plugin"/>
             </feature>
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
-            <receiver android:name="com.amazon.device.iap.ResponseReceiver"><intent-filter><action android:name="com.amazon.inapp.purchasing.NOTIFY" android:permission="com.amazon.inapp.purchasing.Permission.NOTIFY"/>
-                            </intent-filter>
-                        </receiver>
-
+            <receiver android:name="com.amazon.device.iap.ResponseReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.inapp.purchasing.NOTIFY" android:permission="com.amazon.inapp.purchasing.Permission.NOTIFY"/>
+            </intent-filter>
+            </receiver>
         </config-file>
 
         <source-file src="src/amazon/AmazonIapV2Plugin.java" target-dir="src/com/amazon/device/iap/cpt" />
